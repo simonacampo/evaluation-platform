@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row">
+        <div class="col-xs-12">
+           <div class="jumbotron">
+               <h1>{{ title }}</h1>
+           </div>
+        </div>
+    </div>
+    <form action="." method="post">
+        {% csrf_token %}
+        {{ wizard.management_form }}
+
+        {% block step_content %}
+        {% endblock %}
+        <div class="row">
+            <hr />
+            <div class="col-xs-3 text-left">
+                {% if wizard.steps.prev %}
+                <button name="wizard_goto_step" type="submit" class="btn btn-secondary"
+                        value="{{ wizard.steps.prev }}">Back</button>
+                {% endif %}
+            </div>
+
+            <div class="col-xs-6 text-center">
+                <p>Page {{ wizard.steps.step1 }} of {{ wizard.steps.count }}</p>
+            </div>
+
+            <div class="col-xs-3 text-right ">
+                <input type="submit" value="Continue" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "evaluation/base.html" %}
+{% block step_content %}
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2 text-center">
+    <h3>You are asked to visit the platform "{{platform.name}}" and fill in questions about the design and functionality of the platform. Create a profile to get access to the entire platform.</h3>
+<br><br>
+  </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 text-center">
+        <a href="{{platform.url}}" target="_blank" class="btn btn-success btn-lg">VISIT PLATFORM</a>
+        <p>Opens in a new window or tab.</p>
+    </div>
+    <div class="col-sm-6">
+        <div class="checkbox {% if wizard.form.check.errors %} has-error{% endif %}">
+            <label>
+                <input type="checkbox" id="checkboxError" name="{{ wizard.form.check.html_name }}">
+                {{ wizard.form.check.label }}
+            </label>
+            {% if wizard.form.check.errors %}
+                <span class="help-block">{{ wizard.form.check.errors }}</span>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

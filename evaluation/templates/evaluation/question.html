@@ -1,0 +1,14 @@
+{% extends "evaluation/base.html" %}
+{% load crispy_forms_tags %}
+{% block step_content %}
+    <div class="row">
+        <div class="col-xs-12">
+            <h2><small>{{ question.heuristic.category }}</small>
+                <br/>{{ question.heuristic.name }}
+            </h2>
+            <h3>{{ question.question }}</h3>
+            <p>{{ question.explanation }}</p>
+            {% crispy wizard.form %}
+        </div>
+    </div>
+{% endblock %}

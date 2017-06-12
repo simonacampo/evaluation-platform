@@ -1,0 +1,172 @@
+body{
+  font-family: 'Lato',sans-serif;
+}
+
+h1{
+  font-weight: bold;
+  margin-bottom:0;
+}
+
+h3
+{
+  font-size:18px;
+  margin-top:0;
+  padding:0;
+}
+
+#id_evaluation_option_question ul{
+  padding:0;
+  margin:0;
+}
+
+#id_evaluation_option_question li{
+  list-style: none;
+  padding:0;
+  margin:0;
+  margin-right:40px;
+  display: inline-block;
+}
+
+#id_evaluation_reason_question
+{
+  width:200px;
+  height:50px;
+}
+
+.commonground-background {
+  background-color: #fcea21;
+}
+
+.questioncontainer
+{
+    background-color: white;
+    padding:50px;
+    margin-bottom: 100px;
+}
+
+
+.infobox
+{
+  padding:15px;
+  background-color: #cccccc;
+  margin:15px 0;
+}
+
+.question
+{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom:0;
+}
+
+.qnumber
+{
+  font-size: 22px;
+}
+
+.questionexamples{
+  font-style: italic;
+  color: #999;
+  font-size: 14px;
+}
+
+.platform-button
+{
+  position: relative;
+  left:50%;
+  width:200px;
+  margin:20px 0;
+  margin-left:-100px;
+  padding:15px 0;
+  background-color: #fecb04;
+  border:0;
+  border-radius: 15px;
+}
+
+.platform-button:hover
+{
+  opacity:0.8;
+}
+a button.platform-button
+{
+  color:black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.submit-button
+{
+  position: relative;
+  left:50%;
+  width:200px;
+  margin:20px 0;
+  margin-left:-100px;
+  padding:15px 0;
+  background-color: #000;
+  border:0;
+  border-radius: 15px;
+  color:white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.submit-button:hover
+{
+  opacity:0.8;
+}
+
+textarea#id_evaluation_reason_question
+{
+  width:100%;
+  height:125px;
+  padding:0;
+}
+
+input[type=radio] {
+    display: block;
+    margin: 0 auto;
+}
+label {
+    display: inline-block;
+}
+input[type=radio]:last {
+    position:relative;
+    left:50%;
+  }
+
+/* ATTEMPT TO CUSTOM RADIO BUTTONS
+ul#id_evaluation_option_question li label{
+
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+ul#id_evaluation_option_question li label:after {
+  content: "";
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: white;
+  border-radius: 8px;
+  border:2px solid black;
+}
+
+input[type=radio]:checked > ul#id_evaluation_option_question li label:after {
+  background-color: black;
+}
+*/

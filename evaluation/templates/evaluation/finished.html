@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Thank you!</h1>
+            <p>
+                Thank you for helping out! To get credit for your work, enter
+                the following code into microworker:
+            </p>
+            <div class="well well-lg">
+                <span class="h2">{{ verification_code }}</span>
+            </div>
+        </div>
+    </div>
+{% endblock %}

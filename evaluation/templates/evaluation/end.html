@@ -1,0 +1,15 @@
+{% extends "evaluation/base.html" %}
+{% load crispy_forms_tags %}
+{% block step_content %}
+<div class="row">
+    <div class="col-xs-12 col-sm-8">
+        <h2>Want to help evaluate more platforms like this?  </h2>
+        <p>
+            We're building a platform that's dedicated to evaluations like this.
+            Enter your E-mail address below, and we'll send you a message when
+            it's ready to use.
+        </p>
+        {% crispy wizard.form %}
+    </div>
+</div>
+{% endblock %}
