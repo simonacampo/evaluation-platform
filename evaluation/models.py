@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from urllib import parse as urlparse
+import urlarse
 import uuid
 
 from adminsortable.models import SortableMixin
